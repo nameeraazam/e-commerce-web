@@ -1,18 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import loginImg from "../../../../public/Images/login_side_mage.png";
 
-function page() {
+function Page() {
   return (
     <div className="flex flex-col lg:flex-row gap-10 lg:gap-[129px] mt-12 mb-20 px-6 lg:px-24">
       {/* Login Image */}
       <Image
         className="w-full max-w-md lg:max-w-[650px] mx-auto lg:mx-0"
-        src={loginImg}
+        src="/Images/login_side_mage.png"  // Correct path for images in the 'public' folder
         alt="login image"
+        width={650}  // Specify width for Next.js optimization
+        height={450} // Specify height for Next.js optimization
       />
 
-      {/* Login Form */}
+      {/* Sign-up Form */}
       <div className="flex flex-col justify-center gap-10 w-full max-w-md mx-auto lg:mx-0">
         {/* Header Section */}
         <div className="flex flex-col gap-4 text-center lg:text-left">
@@ -62,4 +63,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
