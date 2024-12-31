@@ -1,15 +1,15 @@
-import Link from "next/link";
 import Image from "next/image";
-import loginImg from "../../../../public/Images/login_side_mage.png";
 
-function page() {
+function Page() {
   return (
     <div className="flex flex-col lg:flex-row gap-10 lg:gap-[129px] mt-12 mb-20 px-6 lg:px-24">
       {/* Login Image */}
       <Image
         className="w-full max-w-md lg:max-w-[650px] mx-auto lg:mx-0"
-        src={loginImg}
+        src="/Images/login_side_mage.png"  // Fix the path to be relative to the 'public' folder
         alt="login image"
+        width={650}  // Specify width and height to prevent layout shift
+        height={450} // Specify the height of the image
       />
 
       {/* Login Form */}
@@ -51,4 +51,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
