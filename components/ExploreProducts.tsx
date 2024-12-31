@@ -1,19 +1,11 @@
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import ProductsCard from "./ProductsCard";
 import Link from "next/link";
-import EP1 from '../../public/images/1.png';
-import EP2 from '../../public/images/2.png';
-import EP3 from '../../public/images/3.png';
-import EP4 from '../../public/images/4.png';
-import EP5 from '../../public/images/5.png';
-import EP6 from '../../public/images/6.png';
-import EP7 from '../../public/images/7.png';
-import EP8 from '../../public/images/8.png';
 
 function ExploreProducts() {
   const products = [
     {
-      image: EP1,
+      image: "/images/1.png", // Path from public folder
       productAlt: "pet food",
       title: "Breed Dry Dog Food",
       price: 100,
@@ -22,7 +14,7 @@ function ExploreProducts() {
       reviewCount: 35
     },
     {
-      image: EP2,
+      image: "/images/2.png", // Path from public folder
       productAlt: "canon camera",
       title: "Canon EOS DSLR Camera",
       price: 960,
@@ -31,7 +23,7 @@ function ExploreProducts() {
       reviewCount: 95
     },
     {
-      image: EP3,
+      image: "/images/3.png", // Path from public folder
       productAlt: "asus laptop",
       title: "ASUS FHD Gaming Laptop",
       price: 700,
@@ -40,7 +32,7 @@ function ExploreProducts() {
       reviewCount: 325
     },
     {
-      image: EP4,
+      image: "/images/4.png", // Path from public folder
       productAlt: "curlogy products",
       title: "Curlogy Product Set",
       price: 300,
@@ -49,7 +41,7 @@ function ExploreProducts() {
       reviewCount: 145
     },
     {
-      image: EP5,
+      image: "/images/5.png", // Path from public folder
       productAlt: "electric car",
       title: "Kids Electric Car",
       price: 1200,
@@ -58,7 +50,7 @@ function ExploreProducts() {
       reviewCount: 65
     },
     {
-      image: EP6,
+      image: "/images/6.png", // Path from public folder
       productAlt: "soccer shoes",
       title: "JR Zoom Soccer Cleats",
       price: 400,
@@ -67,7 +59,7 @@ function ExploreProducts() {
       reviewCount: 35
     },
     {
-      image: EP7,
+      image: "/images/7.png", // Path from public folder
       productAlt: "gamepad",
       title: "GP11 Shooter USB Gamepad",
       price: 360,
@@ -76,7 +68,7 @@ function ExploreProducts() {
       reviewCount: 55
     },
     {
-      image: EP8,
+      image: "/images/8.png", // Path from public folder
       productAlt: "jacket",
       title: "Quilted Satin Jacket",
       price: 660,
